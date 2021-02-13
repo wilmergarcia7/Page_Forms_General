@@ -3,10 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--CDN TailWind-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!--CDN Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!--CDN JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <link href="css/sidebar.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/js/tailwind.config.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMS GENERAL</title>
 </head>
-<body>
+<body class="bg-gray-100 bg-local" style="background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/architect.svg')">
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading">Start Bootstrap </div>
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+          </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
     
-</body>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+    
+          <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!--Formularios-->
+          <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            <div class="bg-gray-100 mx-auto max-w-6xl bg-white py-20 px-12 lg:px-24 shadow-xl mb-24">
+                <form>
+                  <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+                    <div class="-mx-3 md:flex mb-6">
+                      <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="company">
+                          Company Name*
+                        </label>
+                        <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Tutsplus">
+                        <div>
+                          <span class="text-red-500 text-xs italic">
+                            Please fill out this field.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="md:w-1/2 px-3">
+                        <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="title">
+                          Title*
+                        </label>
+                        <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="title" type="text" placeholder="Software Engineer">
+                      </div>
+                    </div>
+                    <div class="-mx-3 md:flex mb-6">
+                      <div class="md:w-full px-3">
+                        <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+                          Application Link*
+                        </label>
+                        <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="application-link" type="text" placeholder="http://....">
+                      </div>
+                    </div>
+                    <div class="-mx-3 md:flex mb-2">
+                      <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="location">
+                          Location*
+                        </label>
+                        <div>
+                          <select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="location">
+                            <option>Abuja</option>
+                            <option>Enugu</option>
+                            <option>Lagos</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="md:w-1/2 px-3">
+                        <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="job-type">
+                          Job Type*
+                        </label>
+                        <div>
+                          <select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="job-type">
+                            <option>Full-Time</option>
+                            <option>Part-Time</option>
+                            <option>Internship</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="md:w-1/2 px-3">
+                        <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="department">
+                          Department*
+                        </label>
+                        <div>
+                          <select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="department">
+                            <option>Engineering</option>
+                            <option>Design</option>
+                            <option>Customer Support</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="-mx-3 md:flex mt-2">
+                      <div class="md:w-full px-3">
+                        <button class="md:w-full bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full">
+                          Button
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+          
+              <!--El segundo formulario-->
+              <div class="bg-gray-100 mx-auto max-w-6xl bg-white py-20 px-12 lg:px-24 shadow-xl mb-24">
+                  <form>
+                    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+                      <div class="-mx-3 md:flex mb-6">
+                        <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                          <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="company">
+                            Company Name*
+                          </label>
+                          <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Tutsplus">
+                          <div>
+                            <span class="text-red-500 text-xs italic">
+                              Please fill out this field.
+                            </span>
+                          </div>
+                        </div>
+                        <div class="md:w-1/2 px-3">
+                          <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="title">
+                            Title*
+                          </label>
+                          <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="title" type="text" placeholder="Software Engineer">
+                        </div>
+                      </div>
+                      <div class="-mx-3 md:flex mb-6">
+                        <div class="md:w-full px-3">
+                          <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+                            Application Link*
+                          </label>
+                          <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="application-link" type="text" placeholder="http://....">
+                        </div>
+                      </div>
+                      <div class="-mx-3 md:flex mb-2">
+                        <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                          <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="location">
+                            Location*
+                          </label>
+                          <div>
+                            <select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="location">
+                              <option>Abuja</option>
+                              <option>Enugu</option>
+                              <option>Lagos</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="md:w-1/2 px-3">
+                          <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="job-type">
+                            Job Type*
+                          </label>
+                          <div>
+                            <select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="job-type">
+                              <option>Full-Time</option>
+                              <option>Part-Time</option>
+                              <option>Internship</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="md:w-1/2 px-3">
+                          <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="department">
+                            Department*
+                          </label>
+                          <div>
+                            <select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="department">
+                              <option>Engineering</option>
+                              <option>Design</option>
+                              <option>Customer Support</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="-mx-3 md:flex mt-2">
+                        <div class="md:w-full px-3">
+                          <button class="md:w-full bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full">
+                            Button
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+    
+    </div>
+    <!-- /#wrapper -->
+    
+
+    <footer>
+
+    </footer>
+    <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    
+  </body>
 </html>
