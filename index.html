@@ -30,14 +30,24 @@
   <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <div class="bg-light border-right" id="sidebar-wrapper">
-          <div class="sidebar-heading">Start Bootstrap </div>
+          <div class="sidebar-heading">USER </div>
           <div class="list-group list-group-flush">
             <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Layout Options</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Widgets</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Charts</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">UI Elements</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Forms</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Tables</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Calendar</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Mailbox</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Examples</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Multilevel</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">&#x1F4C4; Documentation</a>
+            <label for="labes">LABELS</label>
+            <a href="#" class="list-group-item list-group-item-action bg-light">&#x1F534; Important</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">&#x1F7E1; Warning</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">&#x1F535; Information</a>
           </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -46,23 +56,27 @@
         <div id="page-content-wrapper" >
     
           <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-            <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-    
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="btn" id="menu-toggle" >
               <span class="navbar-toggler-icon"></span>
             </button>
     
+         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">M </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">&#x1F514;</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
+                  <a class="nav-link" >
+                    &#x1F3F4;
+                  </a>
+                  </li>
+                  <li>
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+                  &#x2699;
                   </a>
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Action</a>
@@ -76,57 +90,61 @@
           </nav>
 
           <!--Formularios-->
-          <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-            
+          
+          <section class="content">
+            <div class="row">
             <!--Primer Formulario-->
-            <div class="m-2">
-              <form>
+            <div class="col-md-6">
+              <div class="m-2">
                 <div class="bg-white p-1 border-t-4 border-purple-400 shadow-md rounded">
-                  <h4 class="box-tittle text-center">Quick Example</h4>
+                  <h3 class="box-title">Quick Example</h3>
                 </div>
-                <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 border-t-4 border-purple-400">
-                  <div class="-mx-3 md:flex mb-6">
-                    <div class="md:w-full px-3 ">
-                      <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="company">
-                        Email Address*
+                <form class="box box-success">
+                  <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 border-t-4 border-purple-400">
+                    <div class="-mx-3 md:flex mb-6">
+                      <div class="md:w-full px-3 ">
+                        <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="company">
+                          Email Address*
+                        </label>
+                        <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 h-10" type="text" placeholder="Email">
+                      </div>
+                    </div>
+    
+                    <div class="-mx-3 md:flex mb-6">
+                      <div class="md:w-full px-3">
+                        <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+                          Password*
+                        </label>
+                        <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 h-10" id="application-link" type="text" placeholder="Your Password">
+                      </div>
+                    </div>
+                    <div class="-mx-3 md:flex mb-2">
+                      <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="location">
+                          File input*
+                        </label>
+                        <input type="file"></input>
+                        <p class="text-opacity-80 text-gray-600 md\:w-full text-xs">Example block-level help text here.</p>
+                      </div>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">
+                        Check me out
                       </label>
-                      <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 h-10" type="text" placeholder="Email">
+                    </div>
+                    <div class="-mx-3 md:flex mt-2">
+                      <div class="md:w-full px-3">
+                        <button class="md:w-full bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full">
+                          Submit
+                        </button>
+                      </div>
                     </div>
                   </div>
-  
-                  <div class="-mx-3 md:flex mb-6">
-                    <div class="md:w-full px-3">
-                      <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
-                        Password*
-                      </label>
-                      <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 h-10" id="application-link" type="text" placeholder="Your Password">
-                    </div>
-                  </div>
-                  <div class="-mx-3 md:flex mb-2">
-                    <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-                      <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="location">
-                        File input*
-                      </label>
-                      <input type="file"></input>
-                      <p class="text-opacity-80 text-gray-600 md\:w-full text-xs">Example block-level help text here.</p>
-                    </div>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox">
-                      Check me out
-                    </label>
-                  </div>
-                  <div class="-mx-3 md:flex mt-2">
-                    <div class="md:w-full px-3">
-                      <button class="md:w-full bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full">
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
+                </form>
+              </div>
+            
+           
             
 
             <!--Segundo Formulario-->
@@ -136,29 +154,49 @@
                   <h4 class="box-tittle text-center">Different Height</h4>
                 </div>
                 <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 border-t-4 border-red-400">
-                  <div class="-mx-3 md:flex mb-6">
-                    <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 h-5" type="text" placeholder=".input-lg">
+                  <div class="box-body">
+                    <input class="form-control form-control-lg" type="text" placeholder=".input-lg">
+                    <br>
+                    <input class="form-control" type="text" placeholder="Default input">
+                    <br>
+                    <input class="form-control form-control-sm" type="text" placeholder=".input-sm">
+  
+                </div>
+              </div>
+              </form>
+            </div>
+            
+             <!--Tercer Formulario-->
+             <div class="m-2">
+              <form>
+                <div class="bg-white p-1 border-t-4 border-red-400 shadow-md rounded">
+                  <h4 class="box-tittle text-center">Different Width</h4>
+                </div>
+                <div class=" bg-white shadow-md rounded px-8 pt-6 pb-8 border-t-4 border-red-400">
+                  <div class="row">
+                  <div class="col-sm-3">
+                    <input class="form-control" type="text" placeholder=".col-xs-3">
                   </div>
   
-                  <div class="-mx-3 md:flex mb-6">
-                    <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 h-10" id="application-link" type="text" placeholder="Your Password">
+                  <div class="col-sm-4">
+                    <input class="form-control" type="text" placeholder=".col-xs-4">
                   </div>
   
-                  <div class="-mx-3 md:flex mb-6">
-                    <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 h-20" id="application-link" type="text" placeholder="Your Password">
+                  <div class="col-sm-5">
+                    <input class="form-control" type="text" placeholder=".col-xs-5">
                   </div>
-  
+                </div>
                 </div>
   
               </form>
             </div>
-            
 
-            <!--Tercer Formulario-->
+
+            <!--Cuarto Formulario-->
             <div class="m-2">
               <form>
                 <div class="bg-white p-1 border-t-4 border-red-400 shadow-md rounded">
-                  <h4 class="box-tittle text-center">Different Height</h4>
+                  <h4 class="box-tittle text-left">Input Addon </h4>
                 </div>
   
                 <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 border-t-4 border-red-400">
@@ -168,13 +206,13 @@
                   </div>
   
                   <div class="input-group m-2">
-                    <input type="text" class="form-control" placeholder="Username">
+                    <input type="text" class="form-control" placeholder="">
                     <span class="input-group-addon text-center border-1 w-8 justify-center">.00</span>
                   </div>
   
                   <div class="input-group m-2">
                     <span class="input-group-addon text-center border-1 w-8 justify-center">$</span>
-                    <input type="text" class="form-control" placeholder="Username">
+                    <input type="text" class="form-control" placeholder="">
                     <span class="input-group-addon text-center border-1 w-8 justify-center">.00</span>
                   </div>
   
@@ -254,8 +292,47 @@
   
               </form>
             </div>
-            
           </div>
+          <div class="col-md-6">
+
+          
+            <div class="m-2">
+              <form>
+                <div class="bg-white p-1 border-t-4 border-blue-400 shadow-md rounded">
+                  <h4 class="box-tittle text-center">Horizontal Form</h4>
+                </div>
+                <div class=" bg-white shadow-md rounded px-8 pt-6 pb-8 border-t-4 border-blue-400">
+                 <form class="form-horizontal">
+                   <div class="box-content">
+                    <div class="row">
+                      <label for="inputEmail3" class="col-sm-2 control-label text-center pt-2 font-bold">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="row pt-2">
+                      <label for="inputPassword3" class="col-sm-2 control-label text-center pt-2 font-bold">Password</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-10 pt-2">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          "Remember me"
+                        </label>
+                      </div>
+                    </div>
+                   </div>
+                 </form>
+                </div>
+                </div>
+
+              </form>
+            </div>
+           </div>
+        </section>
     
     </div>
     <!-- /#wrapper -->
@@ -273,6 +350,7 @@
       $("#wrapper").toggleClass("toggled");
     });
     </script>
+     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     
   </body>
 </html>
