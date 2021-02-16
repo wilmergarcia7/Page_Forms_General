@@ -1,5 +1,5 @@
 # Formularios Generales
-Plantilla que muestra los formularios generales que pueden ser utilizados en la página web
+Plantilla que muestra los formularios generales que pueden ser utilizados en la página web.
 
 # Creadores
 <h1 align="center" fontSize=30px> <strong>Wilmer Josué García Pineda 1006-1998-01227</strong> </h1>
